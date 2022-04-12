@@ -11,6 +11,9 @@
         font-family: 'Courier New', Courier, monospace;
         color: #121212;
     }
+    main{
+        padding: 10%;
+    }
     a{
         font-size: 18px;
         font-family: 'Courier New', Courier, monospace;
@@ -27,12 +30,26 @@
         
     }
     p{
-        padding-left: 10px;
+        padding: 2%;
         /* border:3px outset orange; */
     }
     aside{
         padding: 40px 80px;
         
+    }
+    #nama{
+        display: flex;flex-direction: column; justify-content: center;align-items: center; margin-bottom: 3%;
+    }
+    #foto{
+        display: flex;flex-direction: column; justify-content: center;align-items: center; margin-bottom: 3%;
+
+    }
+    nav{
+        padding: 5%;
+        width: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
     /* #nama:hover{
         display: none;
@@ -41,15 +58,15 @@
 </style>
 <body style="background-color: #c2b499;margin: 0 0 50px 0;">
     <main style="max-width: 800px;margin-left: auto;margin-right: auto;">
-        <article style="margin-top: 50px;">
-            <img src="res/img/profile.jpg" alt="foto saya" width="250" height="300" style="margin-left:34%;">
+        <article style="margin-top: 5%;" id="foto">
+            <img src="res/img/profile.jpg" alt="foto saya" width="250" height="300" >
             <!-- <embed type="image/jpg" src="../res/img/profile.jpg" width="250" height="300" style="margin-left: 34%;" alt="foto saya"> -->
         </article>
         <header id="nama">
-            <h1 style="display: flex;flex-direction: column; justify-content: center;align-items: center; margin-bottom: 3%;">Aditya Fajri</h1>
+            <h1>Aditya Fajri</h1>
         </header>
         
-        <nav style="padding: 0px 230px; display: flex;flex-direction: row;justify-content: space-evenly; margin-bottom: 8%;">
+        <nav>
             <a  href="mailto:adityafjri@gmail.com" target="blank" style="margin: 10px;">Hubungi Saya</a>
             <a  href="https://github.com/adityafjri/" target="blank" style="margin: 10px;">Pekerjaan Saya</a>
             
